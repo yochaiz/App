@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Yiz\.gradle\caches\modules-2\files-2.1\com.plattysoft.leonids\LeonidsLib\1.3.1\465bff5ee3634af14128a1341a20cee246e4b1c1\LeonidsLib-1.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="465bff5ee3634af14128a1341a20cee246e4b1c1">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\LeonidsLib-1.3.1-601aa2815051edcc662f6e51b7ce41ae70bd08b4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\classes-2412a2b67914c35a850980e542da09ae8c5ca991.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\classes-a68731b02f9f9ca28d3209a5dd3bcf88de6419a2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yiz\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-204599dc6fb76ecce4846ff776fb0be4d65a392c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\exploded-aar\App.libraries\tess-two\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc05234c9eb2faa8bf48e16bccc82f3e4c68145d">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\classes-44224ddb89816dd8d8c0c7528ef5e728989df9bc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\Yiz\AndroidStudioProjects\App\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-53d59b9425cda51284144e34acc971fb87c8b7d6.jar" />
+    </item>
+
+</items>

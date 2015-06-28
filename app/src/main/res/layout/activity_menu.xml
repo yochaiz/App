@@ -1,0 +1,524 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:clipChildren="false"
+    tools:context="com.example.yiz.anyonecan.MenuActivity">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.08"
+                            android:clipChildren="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.12"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:id="@+id/butterfly"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.06"
+                                    android:background="@drawable/bf4"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:clipChildren="false" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:clipChildren="false"/>
+
+                        <RelativeLayout
+                            android:id="@+id/menu_child"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:clipChildren="false"
+                            android:background="@drawable/child_game5" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.02" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.02"
+                    android:clipChildren="false" />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:clipChildren="false" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.85"
+                            android:clipChildren="false"
+                            android:id="@+id/bobby_menu"
+                            android:background="@drawable/bobbysit"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.15"
+                            android:clipChildren="false" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:clipChildren="false" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:clipChildren="false" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.12"
+                            android:clipChildren="false" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:clipChildren="false"
+                                    android:id="@+id/butterfly2"
+                                    android:background="@drawable/bf"/>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.1"
+                                    android:clipChildren="false" />
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.45"
+                            android:clipChildren="false" />
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.22"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08"
+                    android:clipChildren="false">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:clipChildren="false"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:layout_weight="0.4"
+                             android:clipChildren="false" />
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:layout_weight="0.6"
+                             android:id="@+id/menu_music"
+                             android:background="@drawable/unmute"
+                             android:clipChildren="false" />
+
+                     </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:id="@+id/logo"
+                    android:background="@drawable/b_child"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.23"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/menuStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/b_play"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.02"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.23"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/menu15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/b_15"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.23"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/menu610"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/b_610" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.21"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/menuGames"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/b_games" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.07"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.23"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/menuStory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/b_story" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clipChildren="false" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:clipChildren="false" />
+
+    </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

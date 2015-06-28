@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">AnyOneCan</string>
+    <string name="title_activity_draw">Draw!</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_page1">Page 1</string>
+    <string name="title_activity_page2">Page 2</string>
+    <string name="title_activity_page3">Page 3</string>
+    <string name="title_activity_page4">Page 4</string>
+    <string name="title_activity_page5">Page 5</string>
+    <string name="title_activity_page6">Page 6</string>
+    <string name="title_activity_page7">Page 7</string>
+    <string name="title_activity_page8">Page 8</string>
+    <string name="title_activity_page9">Page 9</string>
+    <string name="title_activity_page10">Page 10</string>
+    <string name="title_activity_page11">Page 11</string>
+    <string name="title_activity_page12">Page 12</string>
+    <string name="title_activity_page13">Page 13</string>
+    <string name="title_activity_page14">Page 14</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_song_page1">SongPage1Activity</string>
+    <string name="title_activity_song_page2">SongPage2Activity</string>
+    <string name="title_activity_song_page3">SongPage3Activity</string>
+    <string name="title_activity_song_page4">SongPage4Activity</string>
+    <string name="title_activity_word_page1">WordPage1Activity</string>
+    <string name="title_activity_word_page2">WordPage2Activity</string>
+    <string name="title_activity_video_song1">VideoSong1</string>
+    <string name="title_activity_video_song2">VideoSong2Activity</string>
+    <string name="title_activity_video_song3">VideoSong3Activity</string>
+    <string name="title_activity_video_story1">VideoStory1Activity</string>
+    <string name="title_activity_video_story2">VideoStory2Activity</string>
+    <string name="title_activity_video_story3">VideoStory3Activity</string>
+    <string name="title_activity_tran_video_page1">TranVideoPage1</string>
+    <string name="title_activity_video_songs">VideoSongsActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_games_menu">GamesMenuActivity</string>
+    <string name="title_activity_balloon_game">BalloonGameActivity</string>
+
+    <string name="p1_bobby">Good morning children !</string>
+    <string name="p1_children">Good morning Bobby English !</string>
+    <string name="p2_bobby">This is number one</string>
+    <string name="p4_bobby">Point to number two</string>
+    <string name="p4_child">This is number two</string>
+    <string name="p5_bobby">Look at number three</string>
+    <string name="p5_child">This is number three</string>
+    <string name="p6_bobby">What number is this?</string>
+    <string name="p6_child">This is number four</string>
+    <string name="p7_bobby">Point to number five</string>
+    <string name="p7_child">This is number five</string>
+    <string name="p10_child">5+1 is 6</string>
+    <string name="p10_bobby">Good !</string>
+    <string name="p11_child">3+4 is 7</string>
+    <string name="p11_bobby">Very good !</string>
+    <string name="p12_child">6+2 is 8</string>
+    <string name="p12_bobby">Right !</string>
+    <string name="p13_child">5+4 is 9</string>
+    <string name="p13_bobby">That is right !</string>
+    <string name="p14_child">3+7 is 10</string>
+    <string name="p14_bobby">Excellent !</string>
+
+    <string name="p1_ptr">Click on the Character!</string>
+    <string name="song_ptr">Play the verse!</string>
+    <string name="word_prt">Click the number!</string>
+    <string name="title_activity_menus">MenusActivity</string>
+
+
+</resources>

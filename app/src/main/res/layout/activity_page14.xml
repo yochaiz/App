@@ -1,0 +1,332 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/storybook_page14"
+    android:clipChildren="false"
+    tools:context="com.example.yiz.anyonecan.Page14Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.15"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.85"
+                            android:clipChildren="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_p14_bobby"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.35"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_p14_child"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.104"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.125"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:id="@+id/child6Btn_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1875"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.0125"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:clipChildren="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:id="@+id/arrowBtn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:background="@drawable/arrow"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.0125"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:id="@+id/bobbyBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1875"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.0125"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:clipChildren="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:id="@+id/arrowBtn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:background="@drawable/arrow"
+                                    android:clipChildren="false" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:clipChildren="false" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.0125"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:id="@+id/child6Btn_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1875"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.0625"
+                            android:clipChildren="false" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.046"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.052"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:id="@+id/prevBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.104"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.688"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.28"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:id="@+id/bubbleTv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:clipChildren="false" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.32"
+                            android:clipChildren="false" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nextBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.104"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.052"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:clipChildren="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

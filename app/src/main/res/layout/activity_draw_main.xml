@@ -1,0 +1,371 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/games_back"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/logo"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card6" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card7" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card8" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:id="@+id/btn_card10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card10" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:clipChildren="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.09"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/back"
+                        android:background="@drawable/backback"/>
+
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.09"
+                    android:clipChildren="false">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/play"
+                        android:background="@drawable/pause"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.82"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
