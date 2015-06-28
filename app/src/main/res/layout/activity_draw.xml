@@ -149,6 +149,7 @@
                         android:id="@+id/number_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:src="@drawable/shade_seven" />
 
                     <com.anyonecan.tal.drawgame.DrawingView
