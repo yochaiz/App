@@ -2,19 +2,12 @@ package com.anyonecan.tal.drawgame;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
-import android.text.TextUtils;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import java.util.Random;
 
 public class BaseActivity extends ImmersiveActivity {
 
@@ -158,18 +151,19 @@ public class BaseActivity extends ImmersiveActivity {
             this.bubble = bubble;
         }
 
-        private Runnable closeBubble = new Runnable() {
-            public void run() {
-                bubble.setHidden();
-            }
-        };
+//        private Runnable closeBubble = new Runnable() {
+//            public void run() {
+//                bubble.setHidden();
+//            }
+//        };
 
-        private Handler mHandler = new Handler();
+      //  private Handler mHandler = new Handler();
 
         private MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                mHandler.postDelayed(closeBubble, 1000);
+              //  mHandler.postDelayed(closeBubble, 1000);
+                bubble.setHidden();
             }
         };
 

@@ -9,7 +9,7 @@ public class TextBox extends TextBubble {
     @Override
     public void setVisible() {
         if (tvLayout != null) {
-            tvLayout.setTag(textViewLayoutID, stringID);
+            tvLayout.setTag(textViewLayoutID, stringID); //detects collision between 2 different characters
             tvLayout.setBackgroundResource(colorID);
             createTextBubble();
         }
@@ -19,7 +19,7 @@ public class TextBox extends TextBubble {
     public void setHidden() {
         if (tvLayout != null) {
             Integer bckgrndID = (Integer) tvLayout.getTag(textViewLayoutID);
-            if ((bckgrndID != null) && (bckgrndID == stringID)) {
+            if ((bckgrndID != null) && (bckgrndID.equals(stringID))) {
                 tvLayout.setBackgroundResource(0);
                 tvLayout.removeAllViews();
             }
