@@ -148,13 +148,13 @@
                     <ImageView
                         android:id="@+id/number_text"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/shade_seven" />
 
                     <com.anyonecan.tal.drawgame.DrawingView
                         android:id="@+id/drawing"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="#0000" />
 
 
