@@ -62,6 +62,9 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
     boolean continueMusic;
     boolean firstTry;
 
+    boolean soundFinished;
+    String whoStopped;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +84,9 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
         goBackButton = (Button) findViewById(R.id.btn_goBack);
         stopMusicButton = (Button) findViewById(R.id.btn_stop_music);
         number = (ImageView) findViewById(R.id.number_text);
+
+        soundFinished = true;
+        whoStopped = "";
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -154,6 +160,10 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
         kidsYay = MediaPlayer.create(this, R.raw.yay);
         kidsYay.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
+                soundFinished = true;
+                whoStopped = "";
+                soundFinished = false;
+                whoStopped = "rightAnswerMp";
                 rightAnswerMp.start();
                 Toast toast = Toast.makeText(getApplicationContext(), "This is number " + numberToCheck + "!\n" + "     Good Job!", Toast.LENGTH_LONG);
                 LinearLayout linearLayout = (LinearLayout) toast.getView();
@@ -173,6 +183,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
         rightAnswerMp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
                 MusicManager.updateVolume(1);
+                soundFinished = true;
+                whoStopped = "";
                 Intent intent = new Intent(getApplicationContext(), DrawMainActivity.class);
                 rightAnswerMp.reset();
                 rightAnswerMp.release();
@@ -189,6 +201,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
 //        baseApi.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST, "0123456789");
 
         MusicManager.updateVolume(0.2f);
+        soundFinished = false;
+        whoStopped = "mp";
         mp.start();
 
         tryAgainPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -200,6 +214,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                 goBackButton.setClickable(true);
                 drawView.setDisabled(false);
                 MusicManager.updateVolume(1);
+                whoStopped = "";
+                soundFinished = true;
             }
         });
 
@@ -212,6 +228,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                 goBackButton.setClickable(true);
                 drawView.setDisabled(false);
                 MusicManager.updateVolume(1);
+                whoStopped="";
+                soundFinished = true;
             }
         });
 
@@ -237,6 +255,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                     resetButton.setClickable(false);
                     goBackButton.setClickable(false);
                     MusicManager.updateVolume(0.2f);
+                    soundFinished = false;
+                    whoStopped = "drumMp";
                     drumMp.start();
                 }
 
@@ -313,16 +333,24 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                         new ParticleSystem(DrawActivity.this, 200, R.drawable.star_pink, 10000)
                                 .setSpeedRange(0.2f, 0.5f)
                                 .oneShot(drawView, 200);
+                        soundFinished = false;
+                        whoStopped = "kidsYay";
                         kidsYay.start();
                     } else {
                         number.setVisibility(View.VISIBLE);
+                        soundFinished = false;
+                        whoStopped = "kidsWrong";
                         kidsWrong.start();
+                        soundFinished = true;
+                        whoStopped = "";
                         drawView.startNew();
                         Toast toast = Toast.makeText(getApplicationContext(), "Try Again...", Toast.LENGTH_LONG);
                         LinearLayout linearLayout = (LinearLayout) toast.getView();
                         TextView messageTextView = (TextView) linearLayout.getChildAt(0);
                         messageTextView.setTextSize(25);
                         toast.show();
+                        soundFinished = false;
+                        whoStopped = "tryAgainPlayer";
                         tryAgainPlayer.start();
                         firstTry = false;
                     }
@@ -344,6 +372,8 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
             goBackButton.setClickable(false);
             reloadButtonAnim.click();
             MusicManager.updateVolume(0.2f);
+            soundFinished = false;
+            whoStopped = "mp";
             mp.start();
         } else if (view.getId() == R.id.btn_reset) {
             resetButtonAnim.click(new Animation.AnimationListener() {
@@ -354,7 +384,11 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                     reloadButton.setClickable(false);
                     resetButton.setClickable(false);
                     goBackButton.setClickable(false);
+                    soundFinished = false;
+                    whoStopped = "delete";
                     deleteMp.start();
+                    soundFinished = true;
+                    whoStopped = "";
                     if (!firstTry) {
                         number.setVisibility(View.VISIBLE);
                     }
@@ -420,6 +454,9 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
         if (!continueMusic) {
             MusicManager.pause();
         }
+        if (!soundFinished) {
+            stopOrPlayTheCurrentSound(whoStopped,true);
+        }
     }
 
     @Override
@@ -434,6 +471,7 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
         } else {
             stopMusicButton.setBackgroundResource(R.drawable.draw_pause);
         }
+
     }
 
     /**
@@ -512,6 +550,76 @@ public class DrawActivity extends ImmersiveActivity implements View.OnClickListe
                 Log.d("AnyOneCan",
                         "Was unable to copy eng.traineddata "
                                 + e.toString());
+            }
+        }
+    }
+
+    /*A very ugly function.. don't have time. Sorry. */
+    private void stopOrPlayTheCurrentSound(String sound, boolean stop) {
+        if (sound.equals("delete")) {
+            if (stop) {
+                deleteMp.pause();
+            }
+            else {
+                deleteMp.start();
+            }
+        }
+        if (sound.equals("rightAnswerMp")) {
+            if (stop) {
+                rightAnswerMp.pause();
+            }
+            else {
+                rightAnswerMp.start();
+            }
+        }
+        if (sound.equals("tryAgainPlayer")) {
+            if (stop) {
+                tryAgainPlayer.pause();
+            }
+            else {
+                tryAgainPlayer.start();
+            }
+        }
+        if (sound.equals("kidsWrong")) {
+            if (stop) {
+                kidsWrong.pause();
+            }
+            else {
+                kidsWrong.start();
+            }
+        }
+        if (sound.equals("kidsYay")) {
+            if (stop) {
+                kidsYay.pause();
+            }
+            else {
+                kidsYay.start();
+            }
+        }
+        if (sound.equals("drumMp")) {
+            if (stop) {
+                drumMp.pause();
+            }
+            else {
+                drumMp.start();
+            }
+        }
+        if (sound.equals("mp")) {
+            if (stop) {
+                mp.pause();
+            }
+            else {
+                mp.start();
+            }
+        }
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            if (!soundFinished) {
+                stopOrPlayTheCurrentSound(whoStopped,false);
             }
         }
     }

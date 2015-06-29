@@ -58,6 +58,7 @@ public class BalloonGameActivity extends ImmersiveActivity {
     protected boolean isPlaying;
     protected RelativeLayout b_back = null;
     boolean continueMusic;
+    boolean soundFinished;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,62 +144,8 @@ public class BalloonGameActivity extends ImmersiveActivity {
 
         //reload project (init the game with new state)
         reload();
-
+        soundFinished = true;
     }
-
-
-/*
-        //for the cases the machine wakes up or go to sleep. (without clicking on the button)
-        @Override
-        protected void onPause(){
-            super.onPause();
-            pauseMusic();
-        }
-
-        @Override
-        protected void onResume(){
-            super.onResume();
-            if (isPlaying) {
-                resumeMusic();
-            }
-        }
-*/
-
-/*        //aux function that handle the music media player
-        public void pauseMusic()
-        {
-            if(game_mp.isPlaying())
-            {
-                game_mp.pause();
-                length_music=game_mp.getCurrentPosition();
-            }
-        }
-
-        public void resumeMusic()
-        {
-            if(!game_mp.isPlaying())
-            {
-                game_mp.seekTo(length_music);
-                game_mp.start();
-            }
-        }
-
-
-        @Override
-        public void onDestroy ()
-        {
-            super.onDestroy();
-            if(game_mp != null)
-            {
-                try{
-                    game_mp.stop();
-                    game_mp.reset();
-                    game_mp.release();
-                }finally {
-                    game_mp = null;
-                }
-            }
-        }*/
 
 
     private void playAnimation() {
@@ -571,8 +518,10 @@ public class BalloonGameActivity extends ImmersiveActivity {
                     if (checkSuccess(mediaID)) {
                         reload();
                     }
+                    soundFinished = true;
                 }
             });
+            soundFinished = false;
             mp.start();
         }
     }
@@ -589,6 +538,9 @@ public class BalloonGameActivity extends ImmersiveActivity {
         if (!continueMusic) {
             MusicManager.pause();
         }
+        if (!soundFinished) {
+            mp.pause();
+        }
     }
 
     @Override
@@ -603,6 +555,10 @@ public class BalloonGameActivity extends ImmersiveActivity {
             b_music.setBackgroundResource(R.drawable.mute);
         } else {
             b_music.setBackgroundResource(R.drawable.unmute);
+        }
+
+        if (!soundFinished) {
+            mp.start();
         }
     }
 }
