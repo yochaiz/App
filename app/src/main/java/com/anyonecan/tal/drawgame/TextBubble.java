@@ -90,6 +90,23 @@ public class TextBubble {
             }
         }
     };
+
+
+    public static void clearBubble(final BaseActivity activity) {
+        RelativeLayout textLayout = (RelativeLayout) activity.findViewById(textViewLayoutID);
+        RelativeLayout bblLayout = (RelativeLayout) activity.findViewById(bubbleLayoutID);
+        RelativeLayout spkrLayout = (RelativeLayout) activity.findViewById(speakerLayoutID);
+        if (textLayout != null) {
+            textLayout.removeAllViews();
+            textLayout.setBackgroundResource(0);
+        }
+        if (bblLayout != null) {
+            bblLayout.setBackgroundResource(0);
+        }
+        if (spkrLayout != null) {
+            spkrLayout.setBackgroundResource(0);
+        }
+    }
 }
 
 //    public void setHidden() {

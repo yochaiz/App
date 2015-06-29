@@ -157,12 +157,12 @@ public class BaseActivity extends ImmersiveActivity {
 //            }
 //        };
 
-      //  private Handler mHandler = new Handler();
+        //  private Handler mHandler = new Handler();
 
         private MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-              //  mHandler.postDelayed(closeBubble, 1000);
+                //  mHandler.postDelayed(closeBubble, 1000);
                 bubble.setHidden();
             }
         };
@@ -184,6 +184,8 @@ public class BaseActivity extends ImmersiveActivity {
             if (bubble != null) {
                 bubble.setVisible();
                 mp.setOnCompletionListener(onComplete);
+            } else {//element doesn't create TextBubble but needs to remove if one existing
+                TextBubble.clearBubble(BaseActivity.this);
             }
             mp.start();
             if (anim != null) {
